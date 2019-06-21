@@ -4,7 +4,7 @@
 #
 Name     : mvn-sisu
 Version  : 1.1
-Release  : 1
+Release  : 2
 URL      : https://repo1.maven.org/maven2/org/sonatype/sisu/sisu-charger/1.1/sisu-charger-1.1.jar
 Source0  : https://repo1.maven.org/maven2/org/sonatype/sisu/sisu-charger/1.1/sisu-charger-1.1.jar
 Source1  : https://repo1.maven.org/maven2/org/sonatype/sisu/inject/guice-bean/1.4.2/guice-bean-1.4.2.pom
@@ -42,38 +42,38 @@ data components for the mvn-sisu package.
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-charger/1.1
 cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-charger/1.1
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-charger/1.1
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-charger/1.1
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2
-cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject/1.4.2
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject/1.4.2
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-parent/1.4.2
-cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-parent/1.4.2
-
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/inject/guice-bean/1.4.2
-cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/inject/guice-bean/1.4.2
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/inject/guice-bean/1.4.2
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/inject/guice-plexus/1.4.2
-cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/inject/guice-plexus/1.4.2
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/inject/guice-plexus/1.4.2
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-charger/1.1
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-charger/1.1
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject/1.4.2
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject/1.4.2
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-parent/1.4.2
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-parent/1.4.2
 
 
 %files
@@ -81,15 +81,15 @@ cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/sonatype/sisu/inje
 
 %files data
 %defattr(-,root,root,-)
-/usr/share/java/.m2/repository/org/sonatype/sisu/inject/guice-bean/1.4.2/sisu-inject-1.4.2.pom
-/usr/share/java/.m2/repository/org/sonatype/sisu/inject/guice-plexus/1.4.2/sisu-parent-1.4.2.pom
-/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-charger/1.1/guice-bean-1.4.2.pom
+/usr/share/java/.m2/repository/org/sonatype/sisu/inject/guice-bean/1.4.2/guice-bean-1.4.2.pom
+/usr/share/java/.m2/repository/org/sonatype/sisu/inject/guice-plexus/1.4.2/guice-plexus-1.4.2.pom
 /usr/share/java/.m2/repository/org/sonatype/sisu/sisu-charger/1.1/sisu-charger-1.1.jar
-/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7/guice-plexus-1.4.2.pom
-/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7/sisu-charger-1.1.pom
-/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-guice-2.1.7-noaop.jar
-/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-guice-2.1.7.pom
-/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-bean-1.4.2.jar
-/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-bean-1.4.2.pom
-/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject/1.4.2/sisu-inject-plexus-1.4.2.jar
-/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-parent/1.4.2/sisu-inject-plexus-1.4.2.pom
+/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-charger/1.1/sisu-charger-1.1.pom
+/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar
+/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7.pom
+/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar
+/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.pom
+/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar
+/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.pom
+/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-inject/1.4.2/sisu-inject-1.4.2.pom
+/usr/share/java/.m2/repository/org/sonatype/sisu/sisu-parent/1.4.2/sisu-parent-1.4.2.pom
